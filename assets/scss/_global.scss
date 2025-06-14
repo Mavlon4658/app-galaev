@@ -1,0 +1,26 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+$font-montserrat: "Montserrat", sans-serif;
+// Fonts end
+
+// Colors
+$color-pink-dark: #A62682;
+$color-snow-white: #FFFFFF;
+$color-coil: #626381;
+$color-night-blue: #1B2026;
+$color-lazurre: #32B6C1;
+// Colors end
+
+@mixin media($value) {
+    @if ($value < 0) {
+        @media screen and (min-width: calc($value * (-1)) + 'px') {
+            @content;
+        }
+
+    } @else {
+        @media screen and (max-width: $value + 'px') {
+            @content;
+        }
+    }
+}
