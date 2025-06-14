@@ -137,6 +137,7 @@ button, input, textarea, li, div {
         gap: 13px;
         position: relative;
         z-index: 1;
+        cursor: pointer;
 
         &__wrap {
             display: flex;
@@ -442,6 +443,7 @@ main {
     }
 
     .child-card {
+        cursor: pointer;
         box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
         background: $color-snow-white;
         border-radius: 15px;
